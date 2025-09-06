@@ -46,7 +46,7 @@ export default function Navigation() {
                 <Code className="w-5 h-5 text-white" />
               </div>
               <span className="text-white text-xl hidden sm:block">
-                MentorCode
+                SKILL EXCHANGE
               </span>
             </Link>
 

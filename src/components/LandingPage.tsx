@@ -10,7 +10,7 @@ export default function LandingPage() {
 
   const handleJoinAsStudent = () => {
     login('student@test.com', 'password');
-    navigate('/profile');
+    navigate('/auth');
   };
 
   const handleJoinAsMentor = () => {
@@ -132,19 +132,7 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Button>
 
-            <Button
-              onClick={handleJoinAsMentor}
-              className="group relative bg-gradient-to-r from-purple-600/80 to-blue-600/80 hover:from-purple-500/90 hover:to-blue-500/90 backdrop-blur-lg border border-purple-400/30 text-white px-8 py-4 text-lg rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
-            >
-              <span className="flex items-center gap-2">
-                Explore as Mentor
-                <motion.div
-                  className="group-hover:translate-x-1 transition-transform duration-300"
-                >
-                  <ArrowRight className="w-5 h-5" />
-                </motion.div>
-              </span>
-            </Button>
+          
           </motion.div>
         </div>
 
