@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Code, Users, Trophy, BookOpen, MessageCircle, Star } from 'lucide-react';
 import { Button } from './ui/button';
@@ -9,7 +10,6 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   const handleJoinAsStudent = () => {
-    login('student@test.com', 'password');
     navigate('/auth');
   };
 
